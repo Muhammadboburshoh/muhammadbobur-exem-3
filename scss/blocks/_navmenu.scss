@@ -1,0 +1,81 @@
+.navmenu {
+  background-color: $main-link-color;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: $b-radus;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+}
+
+
+.mobil-logo-link {
+  display: none;
+}
+
+.navmenu__list {
+  @include reset-list;
+  display: flex;
+}
+
+.navmenu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin-right: 35px;
+  flex-wrap: wrap;
+}
+
+.social-network-icons {
+  margin-left: auto;
+}
+
+.social__link {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.social__link:last-child {
+  margin: 0;
+}
+
+.social-network-icon:hover {
+  opacity: 0.8;
+}
+
+.social-network-icon:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .mobil-logo-link {
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .navmenu {
+    position: fixed;
+    // top: 50%;
+    bottom: 100%;
+    transform: translateY(100%);
+    width: 100%;
+    border-radius: 0;
+  }
+
+  body {
+    margin-top: 61px;
+  }
+
+  .navmenu__list {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -3,9 +3,15 @@
   width: 100%;
   background-color: #fff;
   top: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  z-index: 5;
 }
+
+.header__wrapper {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 44px;
+}
+
 
 .header__top {
   display: flex;
@@ -23,6 +29,15 @@
   padding-left: 32px;
   position: relative;
 }
+
+.header__contact:hover {
+  opacity: 0.8;
+}
+
+.header__contact:active {
+  opacity: 0.6;
+}
+
 
 .header__before::before {
   content: "";
@@ -45,6 +60,14 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.6;
 }
 
 .operating-time {
@@ -76,5 +99,15 @@
 
   .header__contact::before {
     background-image: url("../img/phone@2x.png");
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__top {
+    display: none;
+  }
+
+  .header__wrapper {
+    padding: 0;
   }
 }
