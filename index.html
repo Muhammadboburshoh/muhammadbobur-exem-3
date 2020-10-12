@@ -31,38 +31,95 @@
           <img class="mobil-logo-img logo-img" src="img/mobil-logo.png" alt="mobil logo">
         </a>
 
-        <ul class="navmenu__list">
-          <li class="navmenu-item">
-            <a href="#servicase" class="navmenu__link">Services</a>
-          </li>
-          <li class="navmenu-item">
-            <a href="#advantages" class="navmenu__link">Advantages</a>
-          </li>
-          <li class="navmenu-item">
-            <a href="#team" class="navmenu__link">Team</a>
-          </li>
-          <li class="navmenu-item">
-            <a href="#reviews" class="navmenu__link">Reviews</a>
-          </li>
-          <li class="navmenu-item">
-            <a href="#contacts" class="navmenu__link">Contacts</a>
-          </li>
-        </ul>
-
-        <div class="social-network-icons">
-          <a href="#" class="social__link">
-            <img class="social-network-icon" src="img/vr-img.png" alt="vr-img.png" srcset="img/vr-img.png 1x, img/vr-img@2x.png 2x" width="18" height="18">
-          </a>
-          <a href="#" class="social__link">
-            <img class="social-network-icon" src="img/instagram.png" alt="instagram" srcset="img/instagram.png 1x, img/instagram@2x.png 2x" width="18" height="18">
-          </a>
-          <a href="#" class="social__link">
-            <img class="social-network-icon" src="img/twitter.png" alt="twitter" srcset="img/twitter.png 1x, img/twitter@2x.png 2x" width="18" height="18">
-          </a>
-        </div>
+          <div class="open-menuuu">
+            <ul class="navmenu__list">
+              <li class="navmenu__item">
+                <a href="#servicase" class="navmenu__link">Services</a>
+              </li>
+              <li class="navmenu__item">
+                <a href="#advantages" class="navmenu__link">Advantages</a>
+              </li>
+              <li class="navmenu__item">
+                <a href="#team" class="navmenu__link">Team</a>
+              </li>
+              <li class="navmenu__item">
+                <a href="#reviews" class="navmenu__link">Reviews</a>
+              </li>
+              <li class="navmenu__item">
+                <a href="#contacts" class="navmenu__link">Contacts</a>
+              </li>
+            </ul>
+    
+            <div class="social-network-icons">
+              <a href="#" class="social__link">
+                <img class="social-network-icon" src="img/vr-img.png" alt="vr-img.png" srcset="img/vr-img.png 1x, img/vr-img@2x.png 2x" width="18" height="18">
+              </a>
+              <a href="#" class="social__link">
+                <img class="social-network-icon" src="img/instagram.png" alt="instagram" srcset="img/instagram.png 1x, img/instagram@2x.png 2x" width="18" height="18">
+              </a>
+              <a href="#" class="social__link">
+                <img class="social-network-icon" src="img/twitter.png" alt="twitter" srcset="img/twitter.png 1x, img/twitter@2x.png 2x" width="18" height="18">
+              </a>
+            </div>
+  
+          </div>
+        <button class="navmenu-togler open-button" type="button" aria-label="Toggle navigation"></button>
       </nav>
     </div>
   </header>
+
+  <section class="site-intro">
+    <div class="intro__top">
+      <div class="container">
+        <div class="intro__text-wrapper">
+          <p class="intro__text">Modern technology and expert-class dentists</p>
+          <h2 class="intro__heading">get a brilliant smile 
+          for every day</h2>
+          <a href="#" class="blue-button intro__button">get</a>
+        </div>
+
+          <div class="intro__buutons-wrapper">
+            <a href="#" class="intro_button-left intro-bottom__button"></a>
+            <a href="#" class="intro__button-right intro-bottom__button"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="intro__bottom">
+      <div class="container intro-bottom__container">
+        <div class="intro__button-wrapper">
+          <div class="treatment-box">
+            <span class="treatment__heading intro__bottom-before">Treatment</span>
+            <p class="treatment__text">All types of dental treatment are carried out using the most modern technologies.</p>
+          </div>
+  
+          <div class="prosthetics-box">
+            <span class="prosthetics__heading intro__bottom-before">Prosthetics</span>
+            <p class="treatment__text">We will help you find the most convenient and aesthetically attractive version of the prosthesis..</p>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <h3 class="form__heading">Appointment</h3>
+          <form action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="name">name input</label>
+            <input aria-label="ismingizni kiriting" class="intro__input" type="name" id="name" placeholder="Neme" required>
+
+            <label class="visually-hidden" for="tel">tel input</label>
+            <input aria-label="phone input" class="intro__input" type="tel" id="tel" placeholder="Phone" required>
+
+            <button class="intro__form__buuton" type="submit">Appointment</button>
+
+              <label class="checkbox-wrapper" for="checkbox">
+                <small class="checkbox-text">I give my consent to the storage and processing of personal data</small>
+                <input class="visually-hidden default" id="checkbox" type="checkbox" required checked>
+                <span class="checkbox-rs"></span>
+              </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 

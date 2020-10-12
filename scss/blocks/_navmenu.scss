@@ -2,6 +2,7 @@
   background-color: $main-link-color;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: $b-radus;
@@ -36,11 +37,20 @@
 
 .social-network-icons {
   margin-left: auto;
+
 }
 
 .social__link {
   display: inline-block;
   margin-right: 13px;
+  flex-shrink: 0;
+}
+
+.open-menuuu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .social__link:last-child {
@@ -55,11 +65,16 @@
   opacity: 0.6;
 }
 
+.open-button, .navmenu-togler {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
 
   .mobil-logo-link {
     display: inline-block;
     flex-shrink: 0;
+    margin-right: 15px;
   }
   .navmenu {
     position: fixed;
@@ -77,5 +92,90 @@
   .navmenu__list {
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .navmenu__list, .social-network-icons {
+    display: none;
+  }
+
+  .navmenu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: start;
+    // width: 100%;
+  }
+
+  .open-menu {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    // background-color: #123;
+  }
+
+  .open-menu .navmenu__link {
+    border-bottom: 1px solid #FFD600;
+  }
+
+  .navmenu__link {
+    margin: 0;
+  }
+
+  .open-icons {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    z-index: 6;
+  }
+
+  .navmenu-togler {
+    outline: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: 0 5px #fff, 0 -5px #fff;
+    z-index: 2;
+  }
+
+  .open-button {
+    outline: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 3px;
+    z-index: 2;
+    background-color: #fff;
+  }
+
+
+
+  .social__link {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .open-button {
+    display: block;
+  }
+
+  .open-menuuu {
+    padding-top: 30px;
+    display: block;
+  }
+
+  .navmenu__item {
+    width: 100%;
   }
 }

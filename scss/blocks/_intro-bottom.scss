@@ -1,0 +1,130 @@
+.intro-bottom__container {
+  display: flex;
+  align-items: start;
+}
+
+.intro__button-wrapper {
+  display: flex;
+
+}
+
+.treatment-box {
+  max-width: 300px;
+  background-color: #FFD600;
+  border-radius: $b-radus;
+  padding: 35px;
+}
+
+.intro__bottom-before::before {
+  content: "";
+  display: inline-block;
+  width: 87px;
+  height: 87px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 19px;
+  mix-blend-mode: multiply;
+}
+
+.treatment__heading, .prosthetics__heading {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    background-image: url("../../img/tish.png");
+  }
+}
+
+.prosthetics__heading::before {
+  background-image: url("../../img/ochiq-tish.png");
+}
+
+.treatment__text {
+  margin: 0;
+}
+
+.prosthetics-box {
+  max-width: 300px;
+  background-color: #FFE040;
+  border-radius: $b-radus;
+  padding: 35px;
+}
+
+.form-wrapper {
+  background-color: $main-link-color;
+  max-width: 540px;
+  width: 100%;
+  padding: 25px 35px;
+  border-radius: $b-radus;
+  margin-top: -125px;
+  position: relative;
+  z-index: 2;
+}
+
+.form__heading {
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 26px;
+  line-height: 42px;
+}
+
+.intro__input {
+  width: 100%;
+  padding: 20px;
+  border-radius: $b-radus;
+  border: 1px solid #fff;
+  background-color: $main-link-color;
+  margin-bottom: 12px;
+  outline: none;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+  }
+}
+
+.intro__form__buuton {
+  background-color: #FFD600;
+  border: none;
+  padding: 17px 63px;
+  text-align: center;
+  display: block;
+  border-radius: $b-radus;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.checkbox-rs {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: $b-radus;
+}
+
+.default:checked + .checkbox-rs {
+  background-image: url("../../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.checkbox-text {
+  display: inline-block;
+  max-width: 256px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
