@@ -1,0 +1,80 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__contact {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.header__before::before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__contact::before {
+  background-image: url("../../img/phone.png");
+}
+
+.contact-nomber {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.operating-time {
+  padding-left: 32px;
+  position: relative;
+}
+
+.operating-time::before {
+  background-image: url("../../img/clock.png");
+}
+
+.open-now {
+  color: #00B007;
+  font-weight: 500;
+  display: block;
+}
+
+.closing-time {
+  font-weight: 300;
+  color: $text-color;
+}
+
+// media 
+
+@mixin bg-res {
+  .operating-time::before {
+    background-image: url("../../img/clock@2x.png");
+  }
+
+  .header__contact::before {
+    background-image: url("../../img/phone@2x.png");
+  }
+}
