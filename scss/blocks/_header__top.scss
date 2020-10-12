@@ -35,7 +35,7 @@
 }
 
 .header__contact::before {
-  background-image: url("../../img/phone.png");
+  background-image: url("../img/phone.png");
 }
 
 .contact-nomber {
@@ -53,7 +53,7 @@
 }
 
 .operating-time::before {
-  background-image: url("../../img/clock.png");
+  background-image: url("../img/clock.png");
 }
 
 .open-now {
@@ -71,10 +71,10 @@
 
 @mixin bg-res {
   .operating-time::before {
-    background-image: url("../../img/clock@2x.png");
+    background-image: url("../img/clock@2x.png");
   }
 
   .header__contact::before {
-    background-image: url("../../img/phone@2x.png");
+    background-image: url("../img/phone@2x.png");
   }
 }
