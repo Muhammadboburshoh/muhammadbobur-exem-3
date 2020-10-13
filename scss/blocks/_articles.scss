@@ -35,12 +35,14 @@
 .articles__list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .artecle_item {
   max-width: 354px;
   flex-shrink: 0;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .artecle_item:last-child {
@@ -71,5 +73,22 @@
   padding-bottom: 25px;
 }
 
+@media only screen and (max-width: 1171px) {
+  .artecle_item:nth-child(2), .artecle_item:nth-child() {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .artecle_item {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .artecle_item {
+    max-width: 80%;
+  }
+}
 
 

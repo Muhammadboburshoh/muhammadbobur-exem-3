@@ -38,6 +38,7 @@
 .w-slaider__item {
   width: 300px;
   margin-right: 50px;
+  flex-shrink: 0;
 }
 
 .w-slaider__item:last-child {
@@ -104,5 +105,11 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .professional-team-wrapper {
     background-image: url("../img/d-p-bacground@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .professional__btn, .professional__btn-left, .professional__btn-right {
+    display: none;
   }
 }
