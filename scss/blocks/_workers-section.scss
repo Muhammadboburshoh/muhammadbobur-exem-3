@@ -31,7 +31,7 @@
 
 .workers__container {
   padding-left: 650px;
-  background-image: url("../../img/worker-img.jpg");
+  background-image: url("../img/worker-img.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 600px 613px;
@@ -132,7 +132,7 @@ only screen and (                min-resolution: 2dppx) {
 @media only screen and (max-width: 1024px) {
   .workers__container {
     padding-left: 450px;
-    background-image: url("../../img/worker-img-1024.png");
+    background-image: url("../img/worker-img-1024.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 441px 612px;
@@ -142,7 +142,7 @@ only screen and (                min-resolution: 2dppx) {
 @media only screen and (max-width: 850px) {
   .workers__container {
     padding-top: 350px;
-    background-image: url("../../img/worker-img-1024.png");
+    background-image: url("../img/worker-img-1024.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
