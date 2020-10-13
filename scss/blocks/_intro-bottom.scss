@@ -1,6 +1,7 @@
 .intro-bottom__container {
+  padding-top: 120px;
   display: flex;
-  align-items: start;
+  align-items: stretch;
 }
 
 .intro__button-wrapper {
@@ -91,7 +92,7 @@
 
   &:focus {
     background-color: #fff;
-    border: 1px solid #0055B8;
+      border: 1px solid #0055B8;
   }
 }
 
