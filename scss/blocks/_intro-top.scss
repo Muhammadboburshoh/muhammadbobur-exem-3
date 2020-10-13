@@ -1,9 +1,36 @@
-.intro__top {
-  background-image: url("../../img/intro-bg.jpg");
-  padding-top: 310px;
-  background-repeat: no-repeat;
-  background-position: 50% center;
+// .intro__top {
+//   background-image: url("../img/intro-bg.jpg");
+//   padding-top: 310px;
+//   background-repeat: no-repeat;
+//   background-position: 50% center;
+//   position: relative;
+// }
+// .contaeiner--wide {
+//   max-width: 1440px;
+//   margin-right: auto;
+//   position: relative;
+// }
+.intro__big-container {
   position: relative;
+}
+
+.intro__bg-list {
+  @include reset-list;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__bg-item {
+  width: 100%;
+  height: 100%;
+}
+
+.intro__text-wrapper {
+  padding-top: 280px;
 }
 
 .intro__text {
@@ -55,12 +82,12 @@
 }
 
 .intro_button-left {
-  background-image: url("../../img/intro-btm-left.png");
+  background-image: url("../img/intro-btm-left.png");
   margin-right: 9px;
 }
 
 .intro__button-right {
-  background-image: url("../../img/intro-btm-right.png");
+  background-image: url("../img/intro-btm-right.png");
   margin-bottom: 147px;
   width: 70px;
 }
@@ -72,44 +99,14 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .intro__button-right {
-    background-image: url("../../img/intro-btm-right@2x.png");
+    background-image: url("../img/intro-btm-right@2x.png");
   }
   .intro_button-left {
-    background-image: url("../../img/intro-btm-left@2x.png");
+    background-image: url("../img/intro-btm-left@2x.png");
   }
 }
 
 @media only screen and (max-width: 860px) {
 
-  .intro__top {
-    background-position: 70% center;
-    // padding-top: 750px;
-  }
-  // .intro__text-wrapper {
-  //   position: absolute;
-  //   width: 100%;
-  //   text-align: center;
-  //   top: 100%;
-  //   left: 0;
-  // }
-
-  .intro__button {
-    display: none;
-  }
-
-  // .intro__heading {
-  //   max-width: 100%;
-  // }
-
-  .intro__buutons-wrapper {
-    // padding-top: 531px;
-  }
-
-  // .intro__button-right {
-  //   margin-bottom: 30px;
-  // }
-
-  // .intro__text {
-  //   margin-top: 10px;
-  // }
+  
 }

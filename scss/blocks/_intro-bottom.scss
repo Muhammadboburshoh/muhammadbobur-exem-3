@@ -24,6 +24,7 @@
   margin-left: auto;
   margin-bottom: 19px;
   mix-blend-mode: multiply;
+  background-size: 87px 87px;
 }
 
 .treatment__heading, .prosthetics__heading {
@@ -36,12 +37,12 @@
   flex-direction: column;
 
   &::before {
-    background-image: url("../../img/tish.png");
+    background-image: url("../img/tish.png");
   }
 }
 
 .prosthetics__heading::before {
-  background-image: url("../../img/ochiq-tish.png");
+  background-image: url("../img/ochiq-tish.png");
 }
 
 .treatment__text {
@@ -115,7 +116,7 @@
 }
 
 .default:checked + .checkbox-rs {
-  background-image: url("../../img/checked.svg");
+  background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -127,4 +128,22 @@
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .prosthetics__heading::before {
+    background-image: url("../img/ochiq-tish@2x.png");
+  }
+
+  .treatment__heading {
+    &::before {
+      background-image: url("../img/tish@2x.png");
+    }
+  }
 }
