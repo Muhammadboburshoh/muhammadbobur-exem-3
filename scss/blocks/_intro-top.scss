@@ -1,15 +1,3 @@
-// .intro__top {
-//   background-image: url("../img/intro-bg.jpg");
-//   padding-top: 310px;
-//   background-repeat: no-repeat;
-//   background-position: 50% center;
-//   position: relative;
-// }
-// .contaeiner--wide {
-//   max-width: 1440px;
-//   margin-right: auto;
-//   position: relative;
-// }
 .intro__big-container {
   position: relative;
 }
@@ -19,18 +7,25 @@
   position: absolute;
   z-index: -1;
   top: 0;
+  // bottom: 100%;
+  // margin-bottom: -200px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 900px;
 }
 
 .intro__bg-item {
   width: 100%;
-  height: 100%;
+  height: 900px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .intro__text-wrapper {
-  padding-top: 280px;
+  // margin-top: -200px;
+  padding-top: 280px;  
 }
 
 .intro__text {
@@ -60,15 +55,23 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: $b-radus;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .intro__button {
   max-width: 265px;
-  margin-bottom: 135px;
+  // margin-bottom: 135px;
 }
 
 .intro__buutons-wrapper {
   display: flex;
+  padding-top: 135px;
 }
 
 .intro-bottom__button {
@@ -79,6 +82,14 @@
   background-position: center center;
   border-radius: $b-radus;
   height: 70px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .intro_button-left {

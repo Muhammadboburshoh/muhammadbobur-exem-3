@@ -88,6 +88,11 @@
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300;
   }
+
+  &:focus {
+    background-color: #fff;
+    border: 1px solid #0055B8;
+  }
 }
 
 .intro__form__buuton {
@@ -99,6 +104,15 @@
   border-radius: $b-radus;
   font-size: 18px;
   line-height: 21px;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .checkbox-wrapper {

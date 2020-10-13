@@ -1,0 +1,108 @@
+.professional-team-wrapper {
+  max-width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-image: url("../img/d-p-bacground.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.w-slaider__heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.w-slaider__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.w-slaider__list-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.w-slaider__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.w-slaider__item {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.w-slaider__item:last-child {
+  margin-right: 0;
+}
+
+.professional__btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 42px;
+  height: 50px;
+  position: absolute;
+ 
+  transform: translateY(-50%);
+  background-color: #fff;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+}
+
+.professional__btn-left {
+  left: 0;
+  top: 50%;
+  background-image: url("../img/slaider-left.svg");
+}
+
+.professional__btn-right {
+  right: 0;
+  top: 50%;
+  background-image: url("../img/slaider-right.svg");
+}
+
+.item__name {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.aftor-about {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .professional-team-wrapper {
+    background-image: url("../img/d-p-bacground@2x.jpg");
+  }
+}

@@ -92,7 +92,7 @@
                   <source media="(max-width:1024px)" srcset="img/intro-bg-1024.jpg 1x, img/intro-bg-1024@2x.jpg 2x">
 
                   <!-- Default image webp -->
-                  <!-- <source type="image/webp" srcset="imgintro-bg.webp 1x, img/intro-bg@2x.webp 2x"> TO'G'IRLASH KERAK-->
+                  <source type="image/webp" srcset="img/intro-bg.webp 1x, img/intro-bg@2x.webp 2x">
 
                   <!-- Default image -->
                   <img src="img/intro-bg.jpg" alt="rasm" width="1920" height="900"
@@ -143,7 +143,7 @@
               <label class="visually-hidden" for="tel">tel input</label>
               <input aria-label="phone input" class="intro__input" type="tel" id="tel" placeholder="Phone" required>
 
-              <button class="intro__form__buuton" type="submit">Appointment</button>
+              <button aria-label="teligon va isimni yuborish" class="intro__form__buuton" type="submit">Appointment</button>
 
               <label class="checkbox-wrapper" for="checkbox">
                 <small class="checkbox-text">I give my consent to the storage and processing of personal data</small>
@@ -203,8 +203,8 @@
 
           </ul>
 
-          <button type="button" class="button-left slaider-button"></button>
-          <button type="button" class="button-right slaider-button"></button>
+          <button aria-label="orqaga qaytish" type="button" class="button-left slaider-button"></button>
+          <button aria-label="oldinga o'tkizish" type="button" class="button-right slaider-button"></button>
         </div>
       </div>
     </section>
@@ -227,7 +227,7 @@
             <li class="worker__item worker__iteam__first-img">
               <div class="worker__item-wrapper">
                 <h3 class="worker__item__heading">Expert-class dentists</h3>
-                <p class="worker__item__text">All 13 dentists of our center are highly qualified specialists with
+                <p class="worker__item--text">All 13 dentists of our center are highly qualified specialists with
                   extensive experience; each of them is sincerely interested in further improving their professionalism.
                 </p>
               </div>
@@ -236,7 +236,7 @@
             <li class="worker__item worker__iteam__second-img">
               <div class="worker__item-wrapper">
                 <h3 class="worker__item__heading">Modern technology</h3>
-                <p class="worker__item__text">We believe that the better equipped a dental clinic is, the better, safer
+                <p class="worker__item--text">We believe that the better equipped a dental clinic is, the better, safer
                   and faster the work is done. We do not consider it possible to save on technology and tools.
                   Everything that is worthy of the attention of professional dentists is already with us.</p>
               </div>
@@ -245,7 +245,7 @@
             <li class="worker__item worker__iteam__third-img">
               <div class="worker__item-wrapper">
                 <h3 class="worker__item__heading">Convenient location and working hours</h3>
-                <p class="worker__item__text">Our clinic is located in the center of the Sverdlovsk region, at: <br>
+                <p class="worker__item--text">Our clinic is located in the center of the Sverdlovsk region, at: <br>
                   Street Raboche-Krestyanskaya 6. From the hypermarket “Semya” to our clinic - 5 minutes on foot.</p>
               </div>
             </li>
@@ -259,6 +259,31 @@
         <div class="professional-team-wrapper">
           <h1 class="w-slaider__heading">Professional team</h1>
           <p class="w-slaider__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists. All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+        </div>
+
+        <div class="w-slaider__list-wrapper">
+          <ul class="w-slaider__list">
+            <li class="w-slaider__item">
+              <img src="img/w-s-first.png" width="300" height="350" alt="rasm" srcset="img/w-s-first.png 1x, img/w-s-first@2x.png 2x" class="w-s__item-img">
+              <span class="item__name">Anna Petrova</span>
+              <p class="aftor-about">Expert-class dentist</p>
+            </li>
+
+            <li class="w-slaider__item">
+              <img src="img/w-s-second.png" width="300" height="350" alt="rasm" srcset="img/w-s-second.png 1x, img/w-s-second@2x.png 2x" class="w-s__item-img">
+              <span class="item__name">Anna Petrova</span>
+              <p class="aftor-about">Expert-class dentist</p>
+            </li>
+
+            <li class="w-slaider__item">
+              <img src="img/b-s-third.png" width="300" height="350" alt="rasm" srcset="img/b-s-third.png 1x, img/b-s-third@2x.png 2x" class="w-s__item-img">
+              <span class="item__name">Anna Petrova</span>
+              <p class="aftor-about">Expert-class dentist</p>
+            </li>
+          </ul>
+
+          <button aria-label="orqaga qaytish" type="button" class="professional__btn-left professional__btn"></button>
+          <button aria-label="oldinga yurish" type="button" class="professional__btn-right professional__btn"></button>
         </div>
       </div>
     </section>

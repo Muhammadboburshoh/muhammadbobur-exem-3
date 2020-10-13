@@ -33,6 +33,14 @@
   display: block;
   margin-right: 35px;
   flex-wrap: wrap;
+
+  &:hover {
+    color: #FFD600;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social-network-icons {
