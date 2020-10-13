@@ -1,0 +1,38 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map__link {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-alegin-c {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.map-top {
+  max-width: 880px;
+  padding-bottom: 0;
+}
+
+.map__container {
+  position: relative;
+}
+
+.map__form-wrapper {
+  width: 550px;
+  background-color: $main-link-color;
+  padding: 30px;
+  border-radius: $b-radus;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}

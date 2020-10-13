@@ -1,0 +1,61 @@
+.quality-service {
+  display: block;
+}
+
+.text-left-wrapper {
+  // padding-right: 50%;
+  max-width: 790px;
+  background-image: url("../img/d-p-bacground.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 275px 152px;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  // margin-bottom: auto;
+  // min-height: 350px;
+  // display: flex;
+}
+
+.quality-service__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.quality-img {
+  position: absolute;
+  left: calc( 50% + 100px );
+  top: 20px;
+}
+
+
+.top-hr {
+  margin-right: 0;
+}
+.quality-service__heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.quality-service__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.imzo-img {
+  margin-left: auto;
+}
+
+.quality-service__btn {
+  width: 256px;
+  align-self: flex-end;
+  margin-left: 36px;
+}
